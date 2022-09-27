@@ -1,0 +1,60 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Survey Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <h1 id="title">Senior High School Strand Survey Form</h1>
+        <p id="description">A survey to determine factors that affect senior high school student in selecting their strands</p>
+
+        <form action="#" id="survey-form">
+            <fieldset class="content">
+                <label id="name-label">Enter your Full Name: <input type="text" id="name" placeholder="Enter name here" required></label>
+                
+                <label id="email-label">Enter your Email Address: <input type="email" id="email" placeholder="Enter email here" required></label>
+                
+                <label id="number-label">Enter your age: <input type="number" id="number" min="16" max="19" placeholder="Enter age here" required></label>
+                
+                <label for="grade-level">What grade level are you in?
+                    <select name="grade-level" id="dropdown">
+                        <option selected disabled>Choose grade level</option>
+                        <option value="Grade-11">Grade 11</option>
+                        <option value="Grade-12">Grade 12</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset class="content">
+                <h4>Factors that affect your decision (Select all that apply)</h4>
+
+                <div class="factors">
+                    <label><input type="checkbox" class="inline" value="Friends">Friends</label>
+                    <label><input type="checkbox" class="inline" value="Parents">Parents</label>   
+                    <label><input type="checkbox" class="inline" value="Relatives">Relatives</label>   
+                    <label><input type="checkbox" class="inline" value="Personal">Personal></label>   
+                    <label>Others (Please specify): <input type="text" class="inline" value=""></label>
+                </div>
+                
+            </fieldset>
+            <fieldset class="content">
+                <h4>Would you recommend your course to incoming Senior High School students?</h4>
+
+                <div class="factors">
+                    <label><input type="radio" class="inline" name="question-1" value="Yes">Yes</label>
+                    <label><input type="radio" class="inline" name="question-1" value="No">No</label>
+                </div>
+
+                <textarea name="thoughts" id="thoughts" cols="30" rows="5" placeholder="Thoughts about your strand..."></textarea>
+            </fieldset> 
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        
+    </body>
+    </html>
